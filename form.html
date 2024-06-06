@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature's Embrace Spa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+        <a class="navbar-brand" href="index.html">
+            <!-- https://chatgpt.com/g/g-pmuQfob8d-image-generator -->
+            <img class="logo img-fluid" src="img/cropLogo.jpg" alt="Logo of website">
+            Nature's Embrace spa
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="swedish.html">Massages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="subscription.html">Subscription</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="team.html">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn myButton text-white" href="form.html">Book an appointment</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5 pt-5">
+        <div class="text-center mb-5">
+            <h2>Book your appointment now</h2>
+            <p>So our team can schedule your massage appointment promptly.</p>
+        </div>
+
+        <!-- Part A: Contact Information & Massage -->
+        <div class="partTitle p-2 mb-4">
+            <h4>Part A: Contact Information</h4>
+        </div>
+        <form id="form" action="confirmation.html" method="GET">
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <label for="firstName" class="bookingLabel">First Name</label>
+                    <input required type="text" class="form-control bookingForm" id="firstName" name="firstName" placeholder="Racine">
+                </div>
+                <div class="col-md-6">
+                    <label for="lastName" class="bookingLabel">Last Name</label>
+                    <input required type="text" class="form-control bookingForm" id="lastName" name="lastName" placeholder="Kane">
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <label for="email" class="bookingLabel">Email</label>
+                    <input required type="email" class="form-control bookingForm" id="email" placeholder="john@email.com">
+                </div>
+                <div class="col-md-6">
+                    <label for="number" class="bookingLabel">Phone Number</label>
+                    <input required type="tel" class="form-control bookingForm" id="number" placeholder="+971 543210987">
+                </div>
+            </div>
+
+            <!-- Part B: Massage Information -->
+            <div class="partTitle p-2 mb-4">
+                <h4>Part B: Massage Information</h4>
+            </div>
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <label for="massageType" class="bookingLabel">Type of Massage</label>
+                    <select name="massageType" class="form-select" id="massageType">
+                        <option value="Select">Select</option>
+                        <option value="Swedish">Swedish Massage</option>
+                        <option value="Hot Stone">Hot Stone Massage</option>
+                        <option value="Seashell">Seashell Massage</option>
+                        <option value="Thaï">Thaï Massage</option>
+                        <option value="Sports">Sports Massage</option>
+                        <option value="Lomi Lomi">Lomi Lomi Massage</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="massageTherapist" class="bookingLabel">Massage Therapist</label>
+                    <select class="form-select" id="massageTherapist" name="massageTherapist">
+                        <option value="Select">Select a Massage Therapist</option>
+                        <option value="Maya Thompson">Maya Thompson</option>
+                        <option value="Sophia Nguyen">Sophia Nguyen</option>
+                        <option value="Olivia Rivera">Olivia Rivera</option>
+                        <option value="Ava Patel">Ava Patel</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mb">
+                <div class="col-md-6">
+                    <label class="bookingLabel">Choose a Date</label>
+                    <input name="date" required type="date" id="date" class="form-control bookingForm">
+                </div>
+                <div class="col-md-6">
+                    <label for="time" class="bookingLabel">Time</label>
+                    <select class="form-select" id="time" name="time">
+                        <option value="Select">Select a Time</option>
+                        <option value="Select">Select a massage therapist to find out what times she is available</option>
+                    </select>
+                    <p><small>All Times are in Eastern Time - US & Canada</small></p>
+                </div>
+            </div>
+            <div class="col-12 mb-3 center text-center">
+                <label class="bookingLabel"><u>Frequency</u></label>
+                <div class="d-flex">
+                    <div class="form-check me-3">
+                        <input class="form-check-input" type="radio" name="frequency" id="once" value="once" checked>
+                        <label class="form-check-label" for="once">Once</label>
+                    </div>
+                    <div class="form-check me-3">
+                        <input class="form-check-input" type="radio" name="frequency" id="weekly" value="weekly">
+                        <label class="form-check-label" for="weekly">Weekly</label>
+                    </div>
+                    <div class="form-check me-3">
+                        <input class="form-check-input" type="radio" name="frequency" id="biWeekly" value="bi-weekly">
+                        <label class="form-check-label" for="biWeekly">Bi-Weekly</label>
+                    </div>
+                    <div class="form-check me-3">
+                        <input class="form-check-input" type="radio" name="frequency" id="monthly" value="monthly">
+                        <label class="form-check-label" for="monthly">Monthly</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="frequency" id="quarterly" value="quarterly">
+                        <label class="form-check-label" for="quarterly">Quarterly</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-12">
+                    <label for="message" class="bookingLabel">Special Requests and Concerns</label>
+                    <textarea class="form-control bookingForm" id="message" rows="3" placeholder="Message"></textarea>
+                </div>
+            </div>
+
+            <!-- Part C: Payment Info -->
+            <div class="partTitle p-2 mb-4">
+                <h4>Part C: Payment Info</h4>
+            </div>
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <label for="cardNumber" class="form-label">Card number</label>
+                    <input required type="text" class="form-control bookingForm" id="cardNumber" placeholder="1234 5678 9012 3456">
+                </div>
+                <div class="col-md-4">
+                    <label for="cardName" class="form-label">Card holder name</label>
+                    <input required type="text" class="form-control bookingForm" id="cardName" placeholder="Racine Kane">
+                </div>
+                <div class="col-md-2">
+                    <label for="expiryDate" class="form-label">Expiration date</label>
+                    <input required type="month" class="form-control bookingForm" id="expiryDate">
+                </div>
+                <div class="col-md-2">
+                    <label for="cvv" class="form-label">CVV/CVC</label>
+                    <input required type="text" class="form-control bookingForm" id="cvv" placeholder="123">
+                </div>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn myButton submit">Submit the form</button>
+            </div>
+        </form>
+    </div>
+
+    <br>
+    <br>
+
+    <footer class="footer bg-success">
+        <div class="container text-center">
+            <!-- https://www.geeksforgeeks.org/how-to-add-icons-to-buttons-in-bootstrap-5/ -->
+            <div class="mb-3">
+                <a href="https://youtu.be/dQw4w9WgXcQ?si=GNlgzZ4LCzZv11Zq" class="me-3"><i class="bi bi-youtube"></i></a>
+                <a href="https://www.facebook.com/rickroll548/" class="me-3"><i class="bi bi-twitter"></i></a>
+                <a href="https://www.instagram.com/p/BgSlRglAKBn/?hl=en" class="me-3"><i class="bi bi-instagram"></i></a>
+                <a href="https://mail.google.com/" class="me-3"><i class="bi bi-envelope"></i></a>
+            </div>
+            <div class="mb-3">
+                <a href="#about">About</a> |
+                <a href="swedish.html">Massages</a> |
+                <a href="subscription.html">Subscription</a> |
+                <a href="team.html">Team</a>
+            </div>
+            <div class="mb-3">
+                <a href="contact.html" class="btn myButton text-white">Contact Us</a>
+            </div>
+            <div>
+                <!-- https://www.w3schools.com/html/html_symbols.asp -->
+                &copy; 2024 All Rights Reserved
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="script/scriptForm.js"></script>
+</body>
+
+</html>

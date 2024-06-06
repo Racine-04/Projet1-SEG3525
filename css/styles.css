@@ -1,0 +1,240 @@
+body {
+    background-color: #FAF3DD;
+    color: #8B4513;
+}
+
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-brand {
+    color: #8B4513;
+}
+
+/* https://stackoverflow.com/questions/68187216/how-to-change-background-color-of-bootstrap-navbar */
+.bg-success {
+    background-color: #32A852 !important;
+}
+
+/* https://stackoverflow.com/questions/17276948/selecting-the-first-li-in-a-navigation-bar */
+.navbar-nav .nav-item:last-child {
+    margin-right: 10px;
+}
+
+.navbar-brand {
+    margin-left: 10px;
+}
+
+.head {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    text-align: center;
+    padding: 0 15px;
+}
+
+.backgroundVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.introBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
+.spaIntro {
+    max-width: 600px;
+    z-index: 1;
+    color: #8B4513;
+    background-color: rgba(250, 243, 221, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 50px; 
+}
+
+.spaIntro h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.spaIntro p {
+    font-size: 1.25rem;
+    margin: 20px 0;
+}
+
+.myButton {
+    background-color: #66CDAA;
+    border: none;
+    color: white;
+}
+
+.myButtonOutline{
+    border: 1px solid #66CDAA;
+    color: #66CDAA;
+}
+
+/* https://stackoverflow.com/questions/25923623/change-hover-color-on-a-button-with-bootstrap-customization */
+.myButton:hover {
+    background-color: #4ea490;
+    color: white;
+}
+
+.myButtonOutline:hover{
+    border: 1px solid #4ea490;
+    color: #4ea490;
+}
+
+
+.aboutUs {
+    padding: 50px 0;
+}
+
+.footer {
+    padding: 20px 0;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #8B4513;
+}
+
+.footer i {
+    font-size: 1.5rem;
+}
+
+/* https://stackoverflow.com/questions/26421274/css-circular-cropping-of-rectangle-image */
+.logo {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.listGroupSpaColor {
+    background-color: #FAF3DD;
+    border: none;
+    color: #8B4513;
+    font-size: large;
+}
+
+.listGroupSpaColor:hover{
+    background-color: #E3D9C2;
+    color: #8B4513;
+}
+
+/* https://stackoverflow.com/questions/26754497/css-disable-hover-effect */
+.listGroupSpaColorActive {
+    background-color: #8B4513;
+    border: none;
+    color: #FAF3DD;
+    font-size: large;
+    pointer-events: none;
+}
+
+.card {
+    border: 5px solid #E3D9C2;
+    background-color: #FFFFF0;
+}
+
+.card-title {
+    color: #8B4513;
+}
+
+.card-text.specialist {
+    color: #8B4513;
+}
+
+.card-text.experience {
+    color: #483C32;
+}
+
+.contactLabel {
+    font-size: larger;
+}
+
+.form-control {
+    background-color: #FAF3DD;
+    color: #8B4513;
+}
+
+.form-select {
+    background-color: #FAF3DD;
+    color: #8B4513;
+    border: 1px solid #8B4513;
+}
+
+/* https://www.w3schools.com/howto/howto_css_placeholder.asp */
+.form-control::placeholder {
+    color: #BC8F8F     ;
+}
+
+/* https://stackoverflow.com/questions/40258576/how-to-prevent-a-navbar-from-overlapping-other-elements */
+.topPadding {
+    padding-top: 40px;
+}
+
+.partTitle {
+    background-color: #90EE90;
+    color: #8B4513;
+}
+
+.bookingForm {
+    border: 1px solid #8B4513;
+}
+
+.submit {
+    font-size: larger;
+}
+
+/* https://www.joshwcomeau.com/css/center-a-div/ */
+.center{
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* https://reintech.io/blog/how-to-style-a-radio-button-with-css */
+input[type='radio'] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #8B4513;
+    background-color: #FAF3DD;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    accent-color: #8B4513;
+}
+  
+input[type='radio']:before {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 60%;
+    margin: 20% auto;
+    border-radius: 50%;
+}
+  
+input[type='radio']:checked:before {
+    background: #FAF3DD;
+}
+
+.confirmationIcon {
+    font-size: 2000%;
+    color: #66CDAA;
+}
+
+.subscriptionIcon {
+    color: #32A852;
+}
